@@ -26,13 +26,13 @@
 							<div class="inner">
 								<h1>Welcome to my Portfolio</h1>
 									<p>
-										Hello, my name is Mahin Arjhuna Goban and I am an aspiring Tools Programmer.
+										Hello, my name is Mahin Arjhuna Goban.
 									</p>
 									<p>
-										Check out my
-										<a href="https://shorturl.at/hMSW0" download="MahinGobanGameResume.pdf">game resume</a>
-										and my
-										<a href="https://shorturl.at/agrAW" download="MahinGobanTechResume.pdf">technical resume</a> here.
+										I am an aspiring Tools Programmer.
+									</p>
+									<p>
+										Check out my <a href="https://shorturl.at/hMSW0"> resume</a> here.
 									</p>
 							</div>
 						</div>
@@ -45,6 +45,19 @@
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
+						<div class="content">
+							<h2 class="title">Sneak Peek</h2>
+							<div class="grid-container">
+								<div class="grid-item1">OMG (Online Multiplayer Game)</div>
+								<div class="image sneakpeek grid-item1"><a href="#OMG"><img src="images/OMG.PNG" alt=""/></a></div>
+								<div class="grid-item2">The Drawer War</div>
+								<div class="image sneakpeek grid-item2"><a href="#TheDrawerWar"><img src="images/OMG.PNG" alt=""/></a></div>
+								<div class="grid-item3">InfeStation</div>
+								<div class="image sneakpeek grid-item3"><a href="#InfeStation"><img src="images/gifs/InfeStation.gif" alt=""/></a></div>
+								<div class="grid-item4">2D Custom Game Engine</div>
+								<div class="image sneakpeek grid-item4"><a href="#CustomEngine"><img src="images/gifs/CustomEngine.gif" alt=""/></a></div>
+							</div>
+						</div>
 					</header>
 
 				<!-- Main -->
@@ -55,8 +68,8 @@
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/IntroCover.png" alt="" /></span>
 								<p>
-									I am a Senior at <a href="https://www.digipen.edu/" target="_blank" rel="noopener noreferrer">DigiPen Institute of Technology</a>
-									, graduating in April 2024 with a Bachelor of Science in Computer Science. My passion lies in building efficient game engine tools
+									I am a Senior at <a href="https://www.digipen.edu/" target="_blank" rel="noopener noreferrer">DigiPen Institute of Technology</a>,
+									graduating in April 2024 with a Bachelor of Science in Computer Science. My passion lies in building efficient game engine tools
 									that will aid in the development of fun and engaging games.
 								</p>
 								<p>
@@ -68,12 +81,12 @@
 						<!-- Projects -->
 							<article id="projects">
 								<h2 class="major">Team Projects</h2>
-								<h3>Online Multiplayer Game (01/2024 - 04/2024)</h3>
+								<h3><div id="OMG">Online Multiplayer Game (01/2024 - 04/2024)</div></h3>
 									<span class="image main"><img src="images/OMG.PNG" alt="" /></span>
 									<p>
 										<b>Project</b>: 3D Multiplayer First Person Shooter <br/>
 										<b>Engine</b>: Unreal Engine 5.3 (Blueprints) <br/>
-										<b>Role(s)</b>: Combat Programmer <br/>
+										<b>Role(s)</b>: Weapons and Tools Programmer <br/>
 										<b>Features Implemented</b>: Weapon System, Health System, Player Death Functionality <br/>
 										<b>Team Size</b>: 4
 									</p>
@@ -91,13 +104,13 @@
 									<p>
 										<b>Project</b>: Tech Demo / Research Project <br/>
 										<b>Engine</b>: Unity (C#) <br/>
-										<b>Role(s)</b>: Systems Designer and AI Programmer <br/>
+										<b>Role(s)</b>: Framework and AI Programmer <br/>
 										<b>Features Implemented</b>: AI Framework <br/>
 										<b>Team Size</b>: 2
 									</p>
 									<p>
-										What was originally meant to be a 2D bullet hell game featuring AI behaviors and physics simulations quickly pivoted into a tech demo
-										/ research project about Unity's ECS package. Our focus then shifted to implementing a few AI behaviors and a collision engine,
+										What was originally meant to be a 2D bullet hell game featuring AI movement behaviors and physics simulations quickly pivoted into a
+										tech demo / research project about Unity's ECS package. Our focus then shifted to implementing a few AI behaviors and a collision engine,
 										optimizing these features for performance. The AI framework I developed takes advantage of abstraction to modularize the different
 										enemies and behaviors, while simultaneously reaping the full benefits of the data oriented nature of the ECS system. This resulted in a
 										system twice as fast as MonoBehaviors.
@@ -105,12 +118,12 @@
 									<p>
 										Find the <a href="https://github.com/mahin-arjhuna/TheDrawerWar" target="_blank" rel="noopener noreferrer">repository</a> here.
 									</p>
-								<h3>InfeStation (08/2022 - 12/2023)</h3>
+								<h3><div id="InfeStation">InfeStation (08/2022 - 12/2023)</div></h3>
 									<span class="image main"><img src="images/Infestation.PNG" alt="" /></span>
 									<p>
 										<b>Project</b>: 3D Space Themed Horror First Person Shooter <br/>
 										<b>Engine</b>: Unreal Engine 5.0 (Blueprints) <br/>
-										<b>Role(s)</b>: AI Programmer & Animations Programmer <br/>
+										<b>Role(s)</b>: AI and Animations Programmer <br/>
 										<b>Features Implemented</b>: AI Framework, Main Enemy, Player & Enemy Animations <br/>
 										<b>Team Size</b>: 8
 									</p>
@@ -153,7 +166,7 @@
 										Find the <a href="https://shorturl.at/cfuJ2" target="_blank" rel="noopener noreferrer">release</a> here.
 									</p>
 								<h2 class="major">Personal Projects</h2>
-								<h3>2D Custom Game Engine</h3>
+								<h3><div id="CustomEngine">2D Custom Game Engine</div></h3>
 									<span class="image main"><img src="images/2DCustomEngine.PNG" alt="" /></span>
 									<p>
 										<b>Language</b>: C++
@@ -164,7 +177,7 @@
 										stages of development.
 									</p>
 									<p>
-										<b>Features</b>: 2D Collision System, 2D OpenGL Renderer, ECS System, JSON (de)serialization, Built in Player Control Templates.
+										<b>Features</b>: 2D Collision System, 2D OpenGL Renderer, ECS System, JSON (de)serialization.
 									</p>
 								<h3>Templated Math Library</h3>
 									<span class="image main"><img src="images/math.jpg" alt="" /></span>

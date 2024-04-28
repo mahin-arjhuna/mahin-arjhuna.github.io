@@ -76,6 +76,54 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* My addition */
+.grid-container {
+	display: grid;
+	row-gap: 20px;
+	column-gap: 40px;
+	margin: 0 0 2rem 0;
+}
+
+	.grid-item1 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.grid-item2 {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.grid-item3 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+	.grid-item4 {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+/* My addition */
+.sneakpeek {
+	width: 100%;
+	height: auto;
+	margin: 1.5rem 0 0 0;
+}
+
+	.sneakpeek img {
+		width: 100%;
+		height: auto;
+	}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -200,6 +248,11 @@ input, select, textarea {
 			width: max-content;
 			padding-bottom: 0.5rem;
 			margin: 0 0 2rem 0;
+		}
+
+		/* My addition */
+		h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
+			margin: 2rem 0 1rem 0;
 		}
 
 	h1 {
@@ -711,6 +764,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.image.main {
+				display: block;
 				margin: 2rem 0;
 			}
 

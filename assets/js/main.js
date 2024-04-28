@@ -4,6 +4,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+var projectNames = [ "OMG", "TheDrawerWar", "InfeStation", "CustomEngine" ];
+var scrolling = false;
+var tag = "";
+
 (function($) {
 
 	var	$window = $(window),
@@ -186,7 +190,18 @@
 
 										// Unlock.
 											setTimeout(function() {
+
 												locked = false;
+
+												// My Addition
+												if (scrolling == true) {
+
+													var scrollPos = document.querySelector('#' + tag).getBoundingClientRect().top;
+													$window.scrollTop(scrollPos);
+													scrolling = false;
+
+												}
+
 											}, delay);
 
 									}, 25);
@@ -357,6 +372,16 @@
 
 						// Show article.
 							$main._show(location.hash.substr(1));
+
+					}
+
+				// My Addition
+				// For handling navigating to projects from home screen
+					else if (projectNames.includes(location.hash.substr(1))) {
+
+						scrolling = true;
+						tag = location.hash.substr(1);
+						$main._show('projects');
 
 					}
 
