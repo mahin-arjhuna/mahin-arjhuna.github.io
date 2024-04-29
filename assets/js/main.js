@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-var projectNames = [ "OMG", "TheDrawerWar", "InfeStation", "CustomEngine" ];
+var projectNames = [ "OMG", "TheDrawerWar", "InfeStation", "PCG", "CustomEngine" ];
 var scrolling = false;
 var tag = "";
 
